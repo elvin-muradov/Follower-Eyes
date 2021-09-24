@@ -1,5 +1,4 @@
-var blacks = document.querySelectorAll('.black');
-    console.log(blacks);
+let blacks = document.querySelectorAll('.black');
 
 document.addEventListener('mousemove',function(event){
   let x = event.clientX*100/window.innerWidth + '%';
