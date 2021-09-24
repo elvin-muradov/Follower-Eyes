@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: wheat;
+  animation-name: anime;
+  animation-duration: 0.1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
+
+#head {
+  background-color: cornflowerblue;
+  width: 400px;
+  height: 450px;
+  padding: 100px;
+  border-radius: 50%;
+  margin: 40px auto;
+  transform: skew(356deg,
+      1deg);
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+#eyes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nose {
+  width: 60px;
+  height: 100px;
+  background-color: rgba(107, 96, 82, 0);
+  border-left: 20px solid black;
+  border-bottom: 15px solid black;
+  transform: rotate(15deg);
+  margin: auto;
+  border-radius: 50px;
+}
+
+#mouth {
+  width: 300px;
+  height: 50px;
+  background-color: brown;
+  margin: 40px auto;
+  border-radius: 60%;
+  border-top: 20px ridge black;
+  transition: all 0.3s ease-in-out;
+}
+
+#head:hover #mouth {
+  background-color: transparent;
+  border-top: 0px;
+  height: 90px;
+  border-bottom: 20px ridge black;
+  border-radius: 100%;
+}
+
+div.eye {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 50%;
+  position: relative;
+  border: 6px solid rgba(255, 255, 255, 0.333);
+  overflow: hidden;
+  box-shadow: inset 0px 6px 30px black;
+}
+
+div.black {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border: 6px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.white {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+@keyframes anime {
+  from {
+    background-color: rgb(150, 17, 17);
+  }
+
+  to {
+    background-color: rgb(238, 49, 49);
+  }
+}
